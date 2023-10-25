@@ -1,0 +1,12 @@
+[package]
+name = "hcmd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "3"
+serde = { version = "1.0.189", features = ["derive"] }
+encoding_rs = "0.8"
+
+[profile.release]
+opt-level = 3
